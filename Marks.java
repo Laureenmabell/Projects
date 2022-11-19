@@ -11,7 +11,7 @@ public class Marks {
 
 	public static void main(String[] args) {
 	//declaring variables
-	double networks,entrepreneurship,accounting,programming,datastructure,sum,average;
+	double networks,entrepreneurship,accounting,programming,datastructure,average;
 	try(Scanner input = new Scanner(System.in)){
 	/*ask student to enter marks for the first unit.*/
     System.out.println("Enter the marks for networks:");
@@ -30,13 +30,11 @@ public class Marks {
     /*getting networks marks and string it in the networks datastructure*/
     datastructure = input.nextDouble();
     
-    //compute sum
-    sum = networks + entrepreneurship + accounting + programming + datastructure;
-    //print result
-    System.out.println("Sum of marks " + sum);
     //compute average
-    average = sum/5;
-    System.out.println("Average " + average);
+    average=( networks + entrepreneurship + accounting + programming + datastructure)/5;
+    //display average
+    System.out.println("The Average is " + average);
+    System.out.format("% 2f average in 2 decimal places "+ average}
 	 } 
 	}
    }
